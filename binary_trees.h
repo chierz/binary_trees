@@ -71,6 +71,10 @@ heap_t *heap_insert(heap_t **root, int value);
 heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
-
+linked_t *new_node_tree(binary_tree_t *node);
+void free_qa(linked_t *head);
+void push_to(const binary_tree_t *node, linked_t *head, linked_t **tail);
+void pop_up(linked_t **head);
+int binary_tree_is_complete(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
